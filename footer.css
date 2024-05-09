@@ -5,6 +5,10 @@ footer {
   background-color: #f8f9fa;
   height: 40px;
   padding: 10px;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .more-information {
