@@ -1,0 +1,50 @@
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+article {
+  width: 65%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.see-product-details {
+  padding: 15px 10px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.see-product-details span {
+  margin-bottom: 3px;
+}
+
+.contenedor-image {
+  display: flex;
+  width: 995px;
+  height: 604px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #f8f9fb;
+  border-radius: 15px;
+}
+
+.main-image {
+  width: 454px;
+  height: 414px;
+}
+
+.menu-options ul {
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  left: -40px;
+}
