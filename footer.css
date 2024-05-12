@@ -5,16 +5,10 @@ footer {
   background-color: #f8f9fa;
   height: 40px;
   padding: 10px;
-
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
-}
-
-.more-information {
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
+  gap: 35px;
 }
 
 .more-information {
@@ -24,6 +18,7 @@ footer {
   gap: 50px;
   color: #58626b;
 }
+
 .more-information li {
   list-style: none;
   font-size: 8px;
@@ -37,28 +32,24 @@ footer {
 .more-information span {
   font-size: 8px;
 }
+
 .social-icons {
   display: flex;
   justify-content: space-between;
   gap: 15px;
 }
+
 .icon {
   height: 15px;
 }
-.bandera img {
-  display: block;
-}
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   footer {
-    justify-content: space-around;
-  }
-  .more-information ul {
-    gap: 30px;
+    position: relative;
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 530px) {
   footer {
     height: 128px;
     flex-direction: column;
