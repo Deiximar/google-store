@@ -1,4 +1,4 @@
-#google-logo {
+.google-logo {
   width: 40px;
   height: 40px;
 }
@@ -7,9 +7,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 3px 5px #58626b;
+  box-shadow: 0px 0px 9px #58626b;
   height: 60px;
-  padding: 10px 28px;
+  padding: 10px 15px;
+  flex-wrap: wrap;
 }
 
 .menu-nav {
@@ -18,14 +19,14 @@ header {
   align-items: center;
 }
 
-.nav {
+.nav-bar {
   display: flex;
   justify-content: space-evenly;
   margin-left: 17px;
   gap: 15px;
 }
 
-.nav li {
+.nav-bar li {
   list-style: none;
 }
 
@@ -33,12 +34,14 @@ header {
   display: flex;
   justify-content: space-between;
   height: 25px;
-  gap: 35px;
+  gap: 25px;
 }
 
-.menu-icon {
+.menu-icon,
+.menu {
   display: none;
 }
+
 .active {
   color: #1a73e9;
   font-weight: bold;
@@ -49,14 +52,49 @@ a:link {
   color: #343a48;
 }
 
-@media screen and (max-width: 750px) {
-  .nav {
+.nav-mobile {
+  width: 100%;
+  display: none;
+}
+.menu:checked + .nav-mobile {
+  height: calc(100vh - 60px);
+}
+
+@media screen and (max-width: 722px) {
+  header {
+    position: relative;
+  }
+  .nav-desktop {
     display: none;
+  }
+  .nav-mobile {
+    display: block;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    /* height: calc(100vh - 60px); */
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .nav-mobile .nav {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-mobile .nav li,
+  .nav-mobile .nav a {
+    font-size: 32px;
+    font-weight: bold;
   }
   .nav-icons {
     height: 22px;
     gap: 25px;
-    margin-left: 60px;
     margin-right: 10px;
   }
   .menu-icon {
