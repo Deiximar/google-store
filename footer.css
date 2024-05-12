@@ -53,6 +53,7 @@ footer {
   footer {
     height: 128px;
     flex-direction: column;
+    gap: 0px;
   }
 
   .more-information {
