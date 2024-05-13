@@ -21,5 +21,10 @@ html,
 body {
   height: 100vh;
   width: 100vw;
-  min-width: 300px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
