@@ -119,6 +119,9 @@ hr {
   .product-description {
     grid-column: auto;
   }
+  .contenedor-image {
+    height: auto;
+  }
 
   .options {
     grid-template-columns: auto auto auto;
